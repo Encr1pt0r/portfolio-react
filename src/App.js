@@ -1,16 +1,12 @@
-import './App.css';
-import Landing from './landing';
+import Landing from './Landing';
 
 function App() {
   return (
     <div className="App">
       <body>
-        <h1>Kevin Mbuluko</h1>
-        <h2>Web and Mobile Developer Based in London</h2>
-
         <Landing />
-        <projects />
-        <footer />
+        {/* <Projects />
+        <Footer /> */}
       </body>
     </div>
   );
