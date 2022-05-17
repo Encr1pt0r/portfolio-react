@@ -11,8 +11,12 @@ export default function landing() {
         </div>
 
         <div className='profile'>
-          <div className='profile__bio'></div>
-          <div className='profile__skills'></div>
+          <div className='profile__bio'>
+            {/* <Bio /> */}
+          </div>
+          <div className='profile__skills'>
+            {/* <Skills /> */}
+          </div>
         </div>
 
         <div className='call-to-action'></div>
