@@ -1,5 +1,7 @@
 import React from "react";
 import "./Landing.scss";
+import Bio from "./Bio";
+import Skills from "./Skills";
 
 export default function landing() {
   return (
@@ -14,22 +16,11 @@ export default function landing() {
 
         <div className="landing__profile">
           <div className="landing__profile__bio">
-            {/* <Bio /> */}
-            <div className="biopic"></div>
-            <p>Qui ex aute id occaecat sit nulla ut laboris ipsum deserunt minim laborum irure. 
-              Labore et excepteur est proident tempor ut in officia irure est consequat aliqua 
-              fugiat aliqua. Commodo id sunt elit nulla. quis voluptate pariatur duis nostrud. 
-              Cillum ea laborum enim magna nostrud culpa sunt.</p>
-            <p>Qui ex aute id occaecat sit nulla ut laboris ipsum deserunt minim laborum irure. 
-              Labore et excepteur est proident tempor ut in officia irure est consequat aliqua 
-              fugiat aliqua.</p>
+            <Bio />
           </div>
           <div className="landing__profile__skills">
-            {/* <Skills /> */}
-            <h3>Looking forward to working with</h3>
-
-            <h3>The tools that I am familar with</h3>
-            </div>
+            <Skills />
+          </div>
         </div>
 
         <div className="landing__call-to-action"></div>
