@@ -1,8 +1,15 @@
-@import './variables';
+@import "./variables";
 
-.biopic {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    background-color: grey;
+.picture {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: url(./assets/kevin.jpg);
+  background-size: cover;
+}
+
+.text {
+  width: 100%;
+  //margin-bottom: 0px;
+  margin: 5px;
 }

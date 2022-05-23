@@ -23,7 +23,9 @@ export default function landing() {
           </div>
         </div>
 
-        <div className="landing__call-to-action"></div>
+        <div className="landing__call-to-action">
+          <p>Scroll down to see my projects</p>
+        </div>
       </div>
 
       <div className="b"></div>

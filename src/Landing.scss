@@ -8,10 +8,10 @@
     background-color: $white;
     margin: 0px;
     box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
 
-    /* This is temporary while I figure out some things about structure */
     &__title {
-        font-family: consolas;
         text-align: center;
         
         /* Padding introduced to top to make sure the background is covering the whole page */
@@ -31,20 +31,21 @@
         padding: 10px;
         gap: 10px;
 
-        &__bio {
-            padding: 10px;
-            // background-color: $red;
+        &__bio { 
             width: 50%;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            align-items: center;
         }
 
-        &__skills {
-            padding: 10px;
-            // background-color: $red;
+        &__skills { 
             width: 50%;
         }
+    }
+
+    &__call-to-action {
+        text-align: center;
+        font-size: x-small;
     }
 
 }
