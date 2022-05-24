@@ -1,15 +1,14 @@
 @import '../variables';
 
 .landing {
-    margin: 20px;
+    margin: 0px;
+    padding-inline: 20px;
     width: 100%;
-    min-height: 1vh;
     height: 100%;
     background-color: $white;
-    margin: 0px;
-    box-sizing: content-box;
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
 
     &__title {
         text-align: center;
@@ -29,7 +28,7 @@
     &__profile {
         display: flex;
         padding: 10px;
-        gap: 10px;
+        gap: 0px;
 
         &__bio { 
             width: 50%;
