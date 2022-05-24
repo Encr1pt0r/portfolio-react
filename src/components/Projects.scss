@@ -1,7 +1,24 @@
 @import '../variables';
 
 .projects {
-    height: 100vh;
+    min-height: 100vh;
+    height: 100%;
     width: 100%;
     background-color: $blue;
+    box-sizing: border-box;
+    padding: 20px;
+
+    &__heading {
+        text-align: center;
+        color: $white;
+    }
+
+    &__items {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
 }
