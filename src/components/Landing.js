@@ -28,7 +28,6 @@ export default function landing() {
         </div>
       </div>
 
-      <div className="b"></div>
     </>
   );
 }

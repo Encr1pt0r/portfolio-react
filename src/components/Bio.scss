@@ -1,10 +1,10 @@
-@import "./variables";
+@import "../variables";
 
 .picture {
   width: 250px;
   height: 250px;
   border-radius: 50%;
-  background: url(./assets/kevin.jpg);
+  background: url(../assets/kevin.jpg);
   background-size: cover;
 }
 
