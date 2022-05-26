@@ -7,20 +7,22 @@ import Project from "./Project";
 // When a container is clicked, a modal appears
 
 export default function Projects() {
-  function meep() {
-    console.log(data.length);
-  }
+
+  // A new array is used to generate a call to Project component with a link to the data
+  let projectList = [];
+  data.forEach((item) => {
+    const imgPath = item.imagePath;
+    // console.log(imgPath);
+    projectList.push( <Project imgPath={imgPath} data={item} /> );
+  })
 
   return (
     <>
       <div className="projects">
         <h1 className="projects__heading">Projects</h1>
-        <div className="projects__items">
-          <Project data={data[0]} />
-          <Project data={data[0]} />
-          <Project data={data[0]} />
-          <Project data={data[0]} />
-        </div>
+        <ul className="projects__items">
+          {projectList}
+        </ul>
       </div>
     </>
   );
