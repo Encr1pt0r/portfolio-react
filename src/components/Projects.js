@@ -13,7 +13,7 @@ export default function Projects() {
   data.forEach((item) => {
     const imgPath = item.imagePath;
     // console.log(imgPath);
-    projectList.push( <Project imgPath={imgPath} data={item} /> );
+    projectList.push( <li key={item.id}> <Project imgPath={imgPath} data={item} /> </li> );
   })
 
   return (

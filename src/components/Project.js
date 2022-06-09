@@ -15,12 +15,16 @@ export default function Project(props) {
     img = ImageAssests.mesh;
   }
 
+
+
   return (
     <>
-      <li className='project' key={props.data.id}>
-        <img className='project__image' src={img} alt="Project img" />
+      <div className='project'>
+        <img className='project__image' src={props.data.imagePath} alt="Project img" />
         <h2 className='project__title'>{props.data.title}</h2>
-      </li>
+        <h3 className='project__subtitle'>{props.data.subtitle}</h3>
+        <p className='project__description'>{props.data.description}</p>
+      </div>
     </>
   )
 }
