@@ -11,9 +11,7 @@ export default function Projects() {
   // A new array is used to generate a call to Project component with a link to the data
   let projectList = [];
   data.forEach((item) => {
-    const imgPath = item.imagePath;
-    // console.log(imgPath);
-    projectList.push( <li key={item.id}> <Project imgPath={imgPath} data={item} /> </li> );
+    projectList.push( <li key={item.id}> <Project imgPath={item.imagePath} data={item} /> </li> );
   })
 
   return (
