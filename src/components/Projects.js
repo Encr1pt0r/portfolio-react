@@ -11,7 +11,10 @@ export default function Projects() {
   // A new array is used to generate a call to Project component with a link to the data
   let projectList = [];
   data.forEach((item) => {
-    projectList.push( <li key={item.id}> <Project imgPath={item.imagePath} data={item} /> </li> );
+    // First element removed because its for landing page
+    if(item != data[0]) {
+      projectList.push( <li key={item.id}> <Project imgPath={item.imagePath} data={item} /> </li> );
+    }
   })
 
   return (

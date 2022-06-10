@@ -1,5 +1,9 @@
 export const data = [
     {
+        "id": "profile",
+        "imagePath": require('./assets/kevin.jpg'),
+    },
+    {
         "id": "opencv",
         "imagePath": require('./assets/opencv4android.png'),
         "title": "OpenCV4Android",
@@ -14,3 +18,8 @@ export const data = [
         "description": "This was an extension to Go Jauntly's main website designed to enhance search engine optimisation. My primary role was to construct the UI based on designs using Nunjucks, SCSS and TypeScript. This project sharpened my skills with Git since multiple people were working on this project. "
     },
 ]
+
+// An array can be created in attribute and then can be called like a normal array
+// So just stack require() in square brackets like below...
+// "imagePath": [require('./assets/opencv4android.png'), require('./assets/mesh.jpg')],
+// props.data.imagePath[i]

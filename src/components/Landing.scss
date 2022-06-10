@@ -19,6 +19,7 @@
             margin: 10px;
             padding-top: 20px;
             margin-top: 0px;
+            font-size: 64px;
         }
 
         &__sub {
@@ -46,7 +47,35 @@
     &__call-to-action {
         text-align: center;
         font-size: x-small;
+
+        &__arrow {
+            width: 30px;
+            height: 30px;
+        }
     }
 
+}
+
+@media only screen and (max-width: 768px) {
+
+    .landing {
+        &__profile {
+            display: flex;
+            padding: 10px;
+            gap: 0px;
+            flex-direction: column;
+
+            &__bio { 
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            &__skills { 
+                width: 100%;
+            }
+        }
+    }
 }
 
