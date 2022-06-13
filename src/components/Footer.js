@@ -14,7 +14,6 @@ export default function Footer() {
           <IoLogoLinkedin className='footer__icons__icon' />
           <FaGithubSquare className='footer__icons__icon' />
         </div>
-       
       </div>
     </>
   )
