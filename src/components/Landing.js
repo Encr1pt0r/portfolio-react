@@ -8,13 +8,6 @@ export default function landing() {
   return (
     <>
       <div className="landing">
-        <div className="landing__title">
-          <h1 className="landing__title__main">Kevin Mbuluko</h1>
-          <h2 className="landing__title__sub">
-            Web and Mobile Developer Based in London
-          </h2>
-        </div>
-
         <div className="landing__profile">
           <div className="landing__profile__bio">
             <Bio />

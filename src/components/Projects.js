@@ -12,7 +12,7 @@ export default function Projects() {
   let projectList = [];
   data.forEach((item) => {
     // First element removed because its for landing page
-    if(item != data[0]) {
+    if(item !== data[0]) {
       projectList.push( <li key={item.id}> <Project imgPath={item.imagePath} data={item} /> </li> );
     }
   })

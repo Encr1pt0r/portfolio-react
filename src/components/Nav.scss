@@ -1,0 +1,100 @@
+@import '../variables';
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    justify-content: space-between;
+    background-color: $blue;
+    color: $white;
+
+    &__title {
+        margin: 1rem;
+        color: inherit;
+        cursor: pointer;
+    }
+
+    &__checkbox {
+        display: none;
+    }
+
+    &__toggle {
+        position: absolute;
+        cursor: pointer;
+        margin: 1rem;
+        right: 0;
+        
+        &__menu {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+
+        &__close {
+            width: 1.5rem;
+            height: 1.5rem;
+            display: none;
+        }
+    }
+
+    &__links {
+        justify-content: center;
+        margin: 1rem;
+        display: none;
+        padding: 0px;
+
+        & a {
+            text-decoration: none;
+            color: $white;
+            font-size: 20px;
+        }
+
+        & li {
+            list-style: none;
+            text-align: center;
+            padding-block: 1.5rem;
+        }
+
+        & li:hover {
+            text-decoration: underline;
+        }
+        
+    }
+
+    
+}
+
+#nav__checkbox:checked ~ ul.nav__links {
+    display: block;
+}
+
+#nav__checkbox:checked ~ label.nav__toggle .nav__toggle__close {
+    display: block;
+}
+
+#nav__checkbox:checked ~ label.nav__toggle .nav__toggle__menu {
+    display: none;
+}
+
+@media only screen and (min-width:560px) {
+    .nav {
+
+        flex-direction: row;
+
+        &__toggle {
+            display: none;
+        }
+
+        &__links {
+            display: block;
+            display: flex;
+            padding: 0px;
+            gap: 1.5rem;
+            margin: 1rem;
+
+            & li {
+                padding: 0px;
+            }
+        }
+    }
+}
+

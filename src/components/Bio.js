@@ -9,6 +9,7 @@ export default function Bio() {
   return (
     <>
       <img src={img} className="bio__picture" />
+      <h2 className="landing__title__sub"> Web and Mobile Developer Based in London</h2>
       <p className="bio__text">
         I am a mobile and web developer graduate based in London, UK. While
         studying at Kingston University, I worked with Java and Android mobile
