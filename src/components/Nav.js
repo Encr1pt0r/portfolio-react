@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Nav.scss";
 import {AiOutlineClose, AiOutlineMenu} from 'react-icons/ai';
+import { Link } from 'react-router-dom';
 
 export default function Nav() {
   return (
@@ -14,8 +15,12 @@ export default function Nav() {
           </label>
         
         <ul className='nav__links'>
-            <li className='nav__links__link'><a href='#'>Home</a></li>
-            <li className='nav__links__link'><a href='#'>Projects</a></li>
+            <li className='nav__links__link'>
+              <Link to='/'>Home</Link>
+            </li>
+            <li className='nav__links__link'>
+              <Link to='/projects'>Projects</Link>
+            </li>
         </ul>
     </nav>
   )
