@@ -2,7 +2,7 @@ import React from "react";
 import "./Landing.scss";
 import Bio from "./Bio";
 import Skills from "./Skills";
-import { BsArrowDownCircleFill } from 'react-icons/bs';
+import { Link } from 'react-router-dom';
 
 export default function landing() {
   return (
@@ -18,8 +18,11 @@ export default function landing() {
         </div>
 
         <div className="landing__call-to-action">
-          <p>Scroll down to see my projects</p>
-          <BsArrowDownCircleFill className="landing__call-to-action__arrow" />
+          <Link to="/projects">
+            <button type="button">
+              Click here to see my projects
+            </button>
+          </Link>
         </div>
       </div>
 
