@@ -26,10 +26,14 @@
         width: 100%;
         color: $white;
     }
+
+    &__button {
+        align-self: center;
+    }
     
     &:hover {
         box-shadow: 5px;
-        text-decoration: underline;
+        // text-decoration: underline;
         text-decoration-color: $white;
     }
 }
